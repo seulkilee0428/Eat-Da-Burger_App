@@ -1,0 +1,24 @@
+{
+  "name": "eat-da-burger_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seulkilee0428/Eat-Da-Burger_App.git"
+  },
+  "author": "Seulki Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seulkilee0428/Eat-Da-Burger_App/issues"
+  },
+  "homepage": "https://github.com/seulkilee0428/Eat-Da-Burger_App#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "mysql": "^2.18.1"
+  }
+}
