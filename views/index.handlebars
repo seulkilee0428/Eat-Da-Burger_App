@@ -1,14 +1,39 @@
-<h1>Eat-Da-Burger!</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <img src="/Assets/image/Burger.png" alt="burgerimage">
+            <h1>Eat-Da-Burger!</h1>
+        </div>
 
+        <div class="col-6">
+            <div class="row">
+                <ul>
+                    {{#each burgers:data}}
+                    {{#unless this.devoured}}
 
-<ul>
-    {{#each bugers}}
-    {{#unless devoured}}
-    {{> burgers/burger-block devoured=flase}}
-    {{/unless}}
-    {{/each}}
-</ul>
+                </ul>
+                <div class="col-9">
+                    <pre>{{this.id}}. {{this.burger_name}}</pre>
+                </div>
+                <div class="col-3">
+                    <input type="text" id="burgerID" value={{this.id}}>
+                    <br>
+                    <button type="submit">Devour it</button>
+                </div>
+                {{/unless}}
+                {{/each}}
 
+            </div>
+        </div>
+        <div class="col-6"> {{#each burgers:data}} {{#if this.devoured}}
+            <input class="form-control" type="text" placeholder="{{this.id}} . {{this.burger_name}}" readonly>
+            {{/if}}
+            {{/each}}
+
+        </div>
+
+    </div>
+</div>
 
 
 
