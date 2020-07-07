@@ -19,26 +19,19 @@ router.get("/burgers", function (req, res) {
 });
 
 router.post("/burgers/create", function (req, res) {
-    burger.create(
-        req.body.burger_name, function (result) {
-
-            console.log(result)
-            res.redirect("/")
-        });
+    burger.create(req.body.burger_name, function () {
+        res.redirect("/burgers");
+    });
 });
 
-router.put("//burgers/:id", function (req, res) {
-    var condition = "id = " + req.params.id;
+router.post("/burgers/create/:id", function (req, res) {
 
-    console.log("condition", condition);
+    var id = req.params.id;
 
-    burger.update(condition, function (result) {
-        if (result.changedRows == 0) {
-            // If no rows were changed, then the ID must not exist, so 404
-            return res.status(404).end();
-        } else {
-            res.status(200).end();
-        }
+    console.log("id", id);
+
+    burger.update(id, function () {
+        res.redirect("/burgers");
     });
 });
 

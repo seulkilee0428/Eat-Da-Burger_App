@@ -6,3 +6,5 @@ VALUES
 ("Bulgogi Burger", false),
 ("Dakgalbi Burger", false),
 ("Daeji Burger", false)
+
+  SELECT * FROM burgers;
