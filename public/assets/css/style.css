@@ -1,25 +1,46 @@
 body {
-    background-color: #ffe6fd;
+    background-color: #fff0f5;
     text-align: center;
     font-family: Arial, sans-serif;
 }
 
 h1{
-  font-size: 35px;
+  font-family: "Rochester", cursive;
+  font-size: 100px;
   font-weight: normal;
-  margin-top: 5px;
+  margin: 0px, 0px, 75px, 0px;
+  color: #DB7093
+  
     
 }
 
-.burger_image{
-    width: 25%
+h2{
+    font-family: "Ralewy", sans-serif;
+    font-weight: 400;
+	font-size: 28px;
+	color: #bf79bc;
+	text-transform: uppercase;
+	position: relative;
+	margin-top: 30px;
+	margin-bottom: 15px;
+    padding-bottom: 20px;
+
 }
 
-#burgers{
-    float: left;
+pre{
+    font-size: 100%;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    text-align: left;
+    
 }
 
-#devoured{
-    float: left;
+.col-3{
+    padding: 0px, 0px, 20px,0px;
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
