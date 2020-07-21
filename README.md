@@ -1,7 +1,6 @@
 # Eat-Da-Burger_App
   ![GitHub Activity](https://img.shields.io/github/commit-activity/m/seulkilee0428/README_Generator?style=plastic);
 
-# Eat-Da-Burger
 * Create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM. Use Node and MySQL to query and route data in the app, and Handlebars to generate your HTML.
 
 ## __Table of Contents__  
@@ -18,6 +17,7 @@ Whenever a user submits a burger's name, your app will display the burger on the
 Each burger in the waiting area also has a Devour it! button. When the user clicks it, the burger will move to the right side of the page.
 Your app will store every burger in a database, whether devoured or not.
 
+![app image](https://github.com/seulkilee0428/Eat-Da-Burger_App/blob/master/public/assets/image/Eat-Da-Burger.png)
 
 ## __Questions__ :
 
